@@ -32,8 +32,8 @@ module.exports = (robot) ->
       price: '1,2,3',
       openNow: true,
       sortByDistance: true
-      query: 'lunch'
-      radius: 1600
+      radius: 500
+      section: 'food'
 
     # Call Foursquare API
     foursquare.Venues.explore process.env.HUBOT_DEFAULT_LATITUDE, process.env.HUBOT_DEFAULT_LONGITUDE, false, params, config.secrets.accessToken, (error, response) ->
